@@ -326,7 +326,7 @@ const Contact: React.FC = () => {
     emailjs.send(
       "service_moy5n36",
       "template_guui0sf",
-      formData,
+      formData as any,
       "iTAVENc8IZkD9BRyA"
     ).then(
       (result: any) => { console.log("Correo enviado:", result.text); setSubmitted(true); },
