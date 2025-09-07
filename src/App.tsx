@@ -218,7 +218,7 @@ const Services: React.FC = () => {
   const services: Service[] = [
     {
       icon: "fas fa-laptop-code",
-      title: "Desarrollo Web Avanzado",
+      title: "Desarrollo Web",
       description: "Plataformas web personalizadas con arquitecturas escalables, optimizadas para rendimiento y experiencia de usuario excepcional."
     },
     {
