@@ -216,12 +216,36 @@ interface Service {
 
 const Services: React.FC = () => {
   const services: Service[] = [
-    { icon: "fas fa-laptop-code", title: "Desarrollo Web Avanzado", description: "Plataformas web personalizadas..." },
-    { icon: "fas fa-mobile-alt", title: "Aplicaciones Móviles", description: "Soluciones nativas y multiplataforma..." },
-    { icon: "fas fa-cloud", title: "Infraestructura Cloud", description: "Diseño e implementación de arquitecturas..." },
-    { icon: "fas fa-brain", title: "Inteligencia Artificial", description: "Soluciones de IA y machine learning..." },
-    { icon: "fas fa-shield-alt", title: "Ciberseguridad", description: "Estrategias integrales de protección..." },
-    { icon: "fas fa-cogs", title: "Automatización Digital", description: "Transformación de procesos empresariales..." },
+    {
+      icon: "fas fa-laptop-code",
+      title: "Desarrollo Web Avanzado",
+      description: "Plataformas web personalizadas con arquitecturas escalables, optimizadas para rendimiento y experiencia de usuario excepcional."
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      title: "Aplicaciones Móviles",
+      description: "Soluciones nativas y multiplataforma para iOS y Android, con interfaces intuitivas y funcionalidades de última generación."
+    },
+    {
+      icon: "fas fa-cloud",
+      title: "Infraestructura Cloud",
+      description: "Diseño e implementación de arquitecturas cloud seguras, escalables y optimizadas para maximizar la eficiencia operativa."
+    },
+    {
+      icon: "fas fa-brain",
+      title: "Inteligencia Artificial",
+      description: "Soluciones de IA y machine learning para automatizar procesos, analizar datos y crear experiencias personalizadas a escala."
+    },
+    {
+      icon: "fas fa-shield-alt",
+      title: "Ciberseguridad",
+      description: "Estrategias integrales de protección digital, desde auditorías de vulnerabilidad hasta implementación de sistemas defensivos avanzados."
+    },
+    {
+      icon: "fas fa-cogs",
+      title: "Automatización Digital",
+      description: "Transformación de procesos empresariales mediante flujos de trabajo automatizados que optimizan recursos y aumentan productividad."
+    }
   ];
 
   return (
@@ -268,10 +292,28 @@ interface Testimonial {
 const Testimonials: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   
-  const testimonials: Testimonial[] = [
-    { id: 1, content: "La transformación digital...", author: "Ana Martínez", position: "Directora de Innovación", image: "https://picsum.photos/seed/person1/100/100.jpg" },
-    { id: 2, content: "La solución de inteligencia artificial...", author: "Carlos Rodríguez", position: "E-commerce Global", image: "https://picsum.photos/seed/person2/100/100.jpg" },
-    { id: 3, content: "La migración a la nube...", author: "Laura Gómez", position: "Directora de TI", image: "https://picsum.photos/seed/person3/100/100.jpg" },
+    const testimonials: Testimonial[] = [
+    {
+      id: 1,
+      content: "La transformación digital que Nexora implementó en nuestra empresa ha revolucionado nuestros procesos internos y mejorado significativamente nuestra competitividad. Su enfoque técnico y visión estratégica son incomparables.",
+      author: "Ana Martínez",
+      position: "Directora de Innovación",
+      image: "https://picsum.photos/seed/person1/100/100.jpg"
+    },
+    {
+      id: 2,
+      content: "La solución de inteligencia artificial desarrollada por Nexora ha optimizado nuestros sistemas de recomendación, aumentando nuestras conversiones en un 40%. Su equipo técnico demuestra un conocimiento profundo y una capacidad excepcional.",
+      author: "Carlos Rodríguez",
+      position: "E-commerce Global",
+      image: "https://picsum.photos/seed/person2/100/100.jpg"
+    },
+    {
+      id: 3,
+      content: "La migración a la nube gestionada por Nexora no solo mejoró nuestra infraestructura tecnológica, sino que también redujo nuestros costos operativos en un 35%. Su profesionalismo y atención al detalle fueron fundamentales para el éxito del proyecto.",
+      author: "Laura Gómez",
+      position: "Directora de TI",
+      image: "https://picsum.photos/seed/person3/100/100.jpg"
+    }
   ];
 
   return (
@@ -349,7 +391,7 @@ const Contact: React.FC = () => {
         <div className="contact-container">
           <div className="contact-info">
             <h3>Conecta con Nuestros Expertos</h3>
-            <p>Nuestro equipo de especialistas está listo...</p>
+            <p>Nuestro equipo de especialistas está listo para analizar tus necesidades y diseñar soluciones tecnológicas personalizadas que impulsen tu crecimiento empresarial.</p>
             <div className="contact-item">
               <i className="fas fa-phone-alt"></i>
               <div><h4>Llámanos</h4><p>+52 55 33465069 (Solo Whatsapp)</p></div>
