@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './styles.css';
+import './App.css';
 import emailjs from "emailjs-com";
 
 const App: React.FC = () => {
