@@ -181,10 +181,23 @@ interface Value {
 
 const MissionVisionValues: React.FC = () => {
   const values: Value[] = [
-    { icon: "fas fa-rocket", title: "Misión", description: "Impulsar la transformación digital..." },
-    { icon: "fas fa-eye", title: "Visión", description: "Ser el referente regional en soluciones..." },
-    { icon: "fas fa-gem", title: "Valores", description: "Innovación constante, integridad técnica..." },
+    {
+      icon: "fas fa-rocket",
+      title: "Misión",
+      description: "Impulsar la transformación digital de las empresas a través de soluciones tecnológicas innovadoras que generen valor competitivo sostenible."
+    },
+    {
+      icon: "fas fa-eye",
+      title: "Visión",
+      description: "Ser el referente regional en soluciones tecnológicas avanzadas, reconocidos por nuestra capacidad de innovación y excelencia operativa."
+    },
+    {
+      icon: "fas fa-gem",
+      title: "Valores",
+      description: "Innovación constante, integridad técnica, excelencia en resultados, colaboración estratégica y orientación al impacto empresarial."
+    }
   ];
+
 
   return (
     <section className="mvv">
@@ -266,6 +279,18 @@ const Services: React.FC = () => {
 };
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
+  
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const scrollToSection = (id:any) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      });
+      setMobileMenuOpen(false);
+    }
+  };
   return (
     <div className="service-card">
       <div className="service-card-header">
@@ -274,7 +299,7 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
       </div>
       <div className="service-card-body">
         <p>{service.description}</p>
-        <Link to="#contact" className="btn">Solicitar Información</Link>
+        <Link to="#contact" onClick={() => scrollToSection('contact')} className="btn">Solicitar Información</Link>
       </div>
     </div>
   );
