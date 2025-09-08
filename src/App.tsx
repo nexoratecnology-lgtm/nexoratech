@@ -283,6 +283,8 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
   const scrollToSection = (id:any) => {
     const element = document.getElementById(id);
     if (element) {
+      console.log(mobileMenuOpen);
+      
       window.scrollTo({
         top: element.offsetTop - 80,
         behavior: 'smooth'
