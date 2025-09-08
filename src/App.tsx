@@ -279,7 +279,6 @@ const Services: React.FC = () => {
 };
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
-  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const scrollToSection = (id:any) => {
     const element = document.getElementById(id);
