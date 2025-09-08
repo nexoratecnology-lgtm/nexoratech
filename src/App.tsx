@@ -42,7 +42,7 @@ const Header: React.FC = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo">
-          <div className="logo-text">Nexora</div>
+          <div className="logo-text">Nexora Technologies</div>
         </div>
         <nav>
           <ul className={`nav-links ${mobileMenuOpen ? 'mobile-active' : ''}`}>
@@ -139,7 +139,7 @@ const Hero: React.FC = () => {
       <div className="container hero-content">
         <h1>Tecnología de Vanguardia para un Mundo Digital</h1>
         <p>
-          En Nexora fusionamos innovación y experiencia para crear soluciones tecnológicas que transforman el futuro de las empresas.
+          En Nexora Technologies fusionamos innovación y experiencia para crear soluciones tecnológicas que transforman el futuro de las empresas.
         </p>
         <div className="hero-buttons">
           <Link to="#services" onClick={() => scrollToSection('services')} className="btn">Explorar Servicios</Link>
@@ -156,16 +156,16 @@ const About: React.FC = () => {
     <section className="about" id="about">
       <div className="containern">
         <div className="section-title">
-          <h2>Sobre Nexora</h2>
+          <h2>Sobre Nexora Technologies</h2>
           <p>Líderes en soluciones tecnológicas innovadoras para la transformación digital empresarial.</p>
         </div>
         <div className="about-content">
           <div className="about-text">
-            <h3>Pioneros en Innovación Tecnológica</h3>
-            <p>Nexora es la rama especializada en tecnología de nuestro grupo corporativo...</p>
-            <p>Con un equipo de expertos apasionados por la tecnología...</p>
-            <p>Nuestra misión es convertir ideas complejas en soluciones tecnológicas elegantes...</p>
-          </div>
+         <h3>Pioneros en Innovación Tecnológica</h3>
+            <p>Nexora es la rama especializada en tecnología de nuestro grupo corporativo, dedicada a desarrollar soluciones digitales de vanguardia que impulsan la transformación empresarial.</p>
+            <p>Con un equipo de expertos apasionados por la tecnología, combinamos experiencia técnica con visión estratégica para crear productos digitales que generan un impacto real en el mercado.</p>
+            <p>Nuestra misión es convertir ideas complejas en soluciones tecnológicas elegantes, eficientes y escalables que posicionen a nuestros clientes a la vanguardia de sus industrias.</p>
+           </div>
         </div>
       </div>
     </section>
@@ -204,7 +204,7 @@ const MissionVisionValues: React.FC = () => {
       <div className="container">
         <div className="section-title">
           <h2>Nuestra Filosofía</h2>
-          <p>Los principios que guían cada proyecto y decisión en Nexora.</p>
+          <p>Los principios que guían cada proyecto y decisión en Nexora Technologies.</p>
         </div>
         <div className="mvv-cards">
           {values.map((value, index) => (
@@ -321,21 +321,21 @@ const Testimonials: React.FC = () => {
     const testimonials: Testimonial[] = [
     {
       id: 1,
-      content: "La transformación digital que Nexora implementó en nuestra empresa ha revolucionado nuestros procesos internos y mejorado significativamente nuestra competitividad. Su enfoque técnico y visión estratégica son incomparables.",
+      content: "La transformación digital que Nexora Technologies implementó en nuestra empresa ha revolucionado nuestros procesos internos y mejorado significativamente nuestra competitividad. Su enfoque técnico y visión estratégica son incomparables.",
       author: "Ana Martínez",
       position: "Directora de Innovación",
       image: "https://picsum.photos/seed/person1/100/100.jpg"
     },
     {
       id: 2,
-      content: "La solución de inteligencia artificial desarrollada por Nexora ha optimizado nuestros sistemas de recomendación, aumentando nuestras conversiones en un 40%. Su equipo técnico demuestra un conocimiento profundo y una capacidad excepcional.",
+      content: "La solución de inteligencia artificial desarrollada por Nexora Technologies ha optimizado nuestros sistemas de recomendación, aumentando nuestras conversiones en un 40%. Su equipo técnico demuestra un conocimiento profundo y una capacidad excepcional.",
       author: "Carlos Rodríguez",
       position: "E-commerce Global",
       image: "https://picsum.photos/seed/person2/100/100.jpg"
     },
     {
       id: 3,
-      content: "La migración a la nube gestionada por Nexora no solo mejoró nuestra infraestructura tecnológica, sino que también redujo nuestros costos operativos en un 35%. Su profesionalismo y atención al detalle fueron fundamentales para el éxito del proyecto.",
+      content: "La migración a la nube gestionada por Nexora Technologies no solo mejoró nuestra infraestructura tecnológica, sino que también redujo nuestros costos operativos en un 35%. Su profesionalismo y atención al detalle fueron fundamentales para el éxito del proyecto.",
       author: "Laura Gómez",
       position: "Directora de TI",
       image: "https://picsum.photos/seed/person3/100/100.jpg"
@@ -487,7 +487,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-container">
           <div className="footer-col">
-            <h4>Nexora</h4>
+            <h4>Nexora Technologies by Grupo Roma</h4>
             <p>Líderes en soluciones tecnológicas innovadoras para la transformación digital empresarial.</p>
           </div>
           <div className="footer-col">
@@ -502,12 +502,12 @@ const Footer: React.FC = () => {
             <h4>Contacto</h4>
             <ul>
               <li><i className="fas fa-phone-alt"></i> +52 55 33465069 (Solo Whatsapp)</li>
-              <li><i className="fas fa-envelope"></i> nexoratecnology@gmail.com</li>
+              <li><i className="fas fa-envelope"></i>nexoratecnology@gmail.com</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 Nexora. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Nexora Technologies. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
